@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Single File Uploader</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    </head>
+    <body>
+        
+        <div class="upload-form">
+            <h3>Upload Your Files Here</h3>
+            <form action="/upload" method="POST", enctype="multipart/form-data">
+                <input type="file" name="file">
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </body>
+</html>
