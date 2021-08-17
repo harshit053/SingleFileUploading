@@ -8,10 +8,17 @@
         
         <div class="upload-form">
             <h3>Upload Your Files Here</h3>
-            <form action="/upload" method="POST", enctype="multipart/form-data">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
                 <input type="file" name="file">
                 <input type="submit" value="Upload">
             </form>
+        </div>
+
+        <div class="uploaded-files">
+            <h3>All uploaded files.</h3>
+            <% files.forEach(function(file) { %>
+                <p><%= file.name %></p>
+            <% }) %>
         </div>
     </body>
 </html>
